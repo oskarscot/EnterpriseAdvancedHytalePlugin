@@ -24,8 +24,6 @@ import scot.oskar.enterpriseadvancedhytaleplugin.message.renderer.factory.RawTex
 
 public class EnterpriseAdvancedHytalePlugin extends JavaPlugin {
 
-  private EnterpriseAdvancedHytaleHelpCommand helpCommand;
-
   public EnterpriseAdvancedHytalePlugin(@Nonnull JavaPluginInit init) {
     super(init);
   }
@@ -45,6 +43,6 @@ public class EnterpriseAdvancedHytalePlugin extends JavaPlugin {
     GreetingDispatcherFactory greetingDispatcherFactory = new DefaultGreetingDispatcherFactory(messageRendererFactory);
     GreetingServiceFactory greetingServiceFactory = new EnterpriseGreetingServiceFactory(greetingComposerFactory, greetingDispatcherFactory, messageRecipientFactory);
 
-    this.helpCommand = new EnterpriseAdvancedHytaleHelpCommand(playerIdentityFactory, greetingRequestFactory, greetingServiceFactory);
+    this.getCommandRegistry().registerCommand(new EnterpriseAdvancedHytaleHelpCommand(playerIdentityFactory, greetingRequestFactory, greetingServiceFactory));
   }
 }

@@ -1,0 +1,18 @@
+{
+  "Group": "oskarscot",
+  "Name": "EnterpriseAdvancedHytalePlugin",
+  "Version": "v0.0.1-alpha",
+  "Description": "Absolutely best, YC backed, enteprise-grade Hytale plugin.",
+  "Authors": [
+    {
+      "Name": "oskarscot"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": { },
+  "OptionalDependencies": { },
+  "DisabledByDefault": false,
+  "Main": "scot.oskar.enterpriseadvancedhytaleplugin.EnterpriseAdvancedHytalePlugin",
+  "IncludesAssetPack": false
+}
